@@ -17,28 +17,5 @@ export class QuoteComponent {
 
   }
 
-  ngOnInit(): void {
-    this.quotesService.getAllQuotes()
-      .pipe(
-        tap((phrasalVerbs: any[]) => {
-          this.quotes = phrasalVerbs.map((e: any) => {
-            const data = e.payload.doc.data();
-            data.id = e.payload.doc.id;
-            return data;
-          });
-          
-        })
-      )
-      .subscribe({
-        error: err => {
-          console.log('Error while fetching data:' + err);
-        }
-      });
-  }
-  
-
-
-
-
 
 }
