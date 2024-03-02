@@ -31,8 +31,4 @@ export class FormQuoteComponent {
     this.quoteService.addQuote(this.modalForm.value);
   }
 
-  deleteQuote(){
-    console.log("jsfjs")
-  }
-
 }
