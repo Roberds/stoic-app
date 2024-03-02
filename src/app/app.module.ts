@@ -5,13 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
-import { QuoteComponent } from './quote/quote.component';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    QuoteComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,

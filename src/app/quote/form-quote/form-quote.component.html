@@ -1,0 +1,22 @@
+<div class="container-sm" style="max-width: 500px;">
+    <h2 class="fst-italic mt-4">STOIC</h2>
+<form [formGroup]="modalForm" (ngSubmit)="saveQuote()" class="row g-3 border boder-black mt-2">
+    <div class="col-md-12">
+        <label  class="form-label">Author</label>
+        <input formControlName="author"  class="form-control">
+    </div>
+    <div class="col-md-12">
+        <label  class="form-label">Description</label>
+        <input formControlName="description" class="form-control">
+    </div>
+    <div class="col-md-12">
+        <label  class="form-label">Categoria</label>
+        <input formControlName="category" class="form-control">
+    </div>
+    <div class="d-inline-flex p-2">
+        <button type="submit" class="btn btn-primary mb-3">Add</button>
+        <button type="button" class="btn btn-danger mb-3">Cancel</button>
+    </div>
+  </form>
+</div>
+  
